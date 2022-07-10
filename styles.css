@@ -13,7 +13,6 @@
   font-family: "Roboto", sans-serif;
 }
 .nav-container {
-  width: 100vw;
   background-color: var(--darkgray);
   position: sticky;
   z-index: 3;
@@ -236,4 +235,29 @@
   color: var(--white);
   padding: 10px;
   font-size: 20px;
+}
+
+/*ABOUT SKILL SECTION CONTAINER*/
+@media screen and (max-width: 768px) {
+  .about-skills-section-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .about-skill-section-image {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .about-skill-section-imagepic {
+    height: 220px;
+    margin-top: 35px;
+  }
+  .about-skill-section-text {
+    margin-top: 35px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
