@@ -15,7 +15,7 @@
 .nav-container {
   background-color: var(--darkgray);
   position: sticky;
-  z-index: 3;
+  z-index: 20;
   top: 0;
 }
 
@@ -38,6 +38,9 @@
   font-size: 20px;
 }
 
+#navbar-logo:hover {
+  cursor: pointer;
+}
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -88,6 +91,7 @@
   #navbar-logo {
     margin-left: 20px;
   }
+
   .nav-menu.active {
     background: var(--darkgray);
     left: 0;
@@ -237,7 +241,7 @@
   font-size: 20px;
 }
 
-/*ABOUT SKILL SECTION CONTAINER*/
+/*ABOUT SKILL SECTION MOBILE STYLES*/
 @media screen and (max-width: 768px) {
   .about-skills-section-container {
     justify-content: center;
@@ -259,5 +263,86 @@
     margin-top: 35px;
     margin-right: 5%;
     margin-left: 5%;
+    margin-bottom: 35px;
   }
+}
+/*PROJECTS SECTION STYLES*/
+.projects-section-container {
+  background: linear-gradient(to bottom, #131414, #2d2e30);
+  position: relative;
+}
+
+.projects-section-title {
+  color: var(--white);
+  text-align: center;
+  padding-top: 75px;
+}
+
+.projects-list-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 35px;
+}
+
+.projects-list-item {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 255px;
+  overflow: hidden;
+  margin: 35px 15px 15px 0;
+}
+
+.projects-list-item > img {
+  width: 320px;
+  height: 255px;
+}
+.projects-list-item-info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+  width: 300px;
+  color: #fff;
+  padding: 10px;
+  content: initial;
+  text-align: center;
+}
+
+.projects-list-item:hover .projects-list-item-info {
+  display: block;
+}
+.projects-list-item-info-link {
+  text-decoration: none;
+  color: var(--brightblue);
+}
+/*projects section mibile styles*/
+@media screen and (max-width: 768px) {
+  .projects-section-title {
+    padding-top: 35px;
+    font-size: 1.8em;
+  }
+
+  .projects-list-container {
+    margin-top: 10px;
+  }
+}
+/*footer styles*/
+footer {
+  height: 80px;
+  background: linear-gradient(to bottom, #131414, #2d2e30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p {
+  color: var(--white);
 }
