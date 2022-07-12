@@ -17,7 +17,7 @@ const projects = [
     projectDescription: "website to find info about plants",
     technologyDescription:
       "Made with React Js and with the api created with My JSON Server deployed in heroku",
-    linkProject: "https://github.com/pab-mich/plants-app",
+    linkProject: "https://pab-mich.github.io/plants-app/",
     linkcode: "https://github.com/pab-mich/plants-app",
   },
   {
