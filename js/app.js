@@ -33,13 +33,3 @@ const navbarLogo = document.getElementById("navbar-logo");
 navbarLogo.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
-
-//form-modal-content
-const contact = document.getElementById("contact");
-const formModalContainer = document.getElementById("form-modal-container");
-
-formModalContainer.style.display = "none";
-
-contact.addEventListener("click", () => {
-  console.log("contactame");
-});

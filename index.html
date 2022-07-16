@@ -18,6 +18,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://kit.fontawesome.com/ee3d08c0a8.js" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("gCBjK_qQC8VIA3mqk");
+    </script>
     <title>Pab Michelini</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -45,6 +53,49 @@
         </ul>
       </nav>
     </div>
+
+    <!--Alert content for emails -->
+    <div
+      id="showAlert"
+      class="flash flash-success alert alert-dismissible fade show"
+      role="alert"
+    ></div>
+
+    <!--modal content form section-->
+    <div id="form-modal-container" class="form-modal-container">
+      <form id="form" class="form-modal-content">
+        <h3>Thanks for your contact</h3>
+        <div class="field">
+          <label for="from_name">Your Name</label>
+          <input type="text" name="from_name" id="from_name" />
+        </div>
+
+        <div class="field">
+          <label for="email_id">Your Email</label>
+          <input
+            type="text"
+            name="email_id"
+            id="email_id"
+            placeholder="Please be sure your email is correct.."
+          />
+        </div>
+
+        <div class="field">
+          <label for="message">Your Message</label>
+          <textarea
+            rows="4"
+            cols="35"
+            name="message"
+            id="message"
+            class="message"
+            placeholder="Here you can write whatever you want!. i will receive an email and i will get back to you soon..."
+          ></textarea>
+        </div>
+
+        <input type="submit" id="button" value="Send Email" />
+      </form>
+    </div>
+
     <!--main section-->
     <div class="main-section-container">
       <div class="main-section-text">
@@ -59,9 +110,6 @@
       </div>
       <img class="main-section-image" src="images/pab-image.jpeg" alt="profile-image" />
     </div>
-
-    <!--modal content-->
-    <div id="form-modal-container" class="form-modal-container"></div>
 
     <!--about and skill section -->
     <div class="about-skills-section-container" id="about-skills-section-container">
@@ -99,14 +147,17 @@
         </p>
       </div>
     </div>
+
     <!--projects section -->
     <div class="projects-section-container" id="projects-section-container">
       <h1 class="projects-section-title">MY RECENT PROJECTS</h1>
       <ul class="projects-list-container" id="projects-list-container"></ul>
     </div>
+
     <!--footer-->
     <footer><p>Pablo Michelini - Web Developer</p></footer>
-    <script src="projects.js"></script>
-    <script src="app.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>
