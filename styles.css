@@ -378,6 +378,7 @@ footer > p {
 
 .form-modal-content > h3 {
   margin: 3%;
+  text-align: center;
   color: var(--lightgray);
 }
 .field {
