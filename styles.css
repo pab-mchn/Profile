@@ -296,15 +296,15 @@
 .projects-list-item {
   position: relative;
   float: left;
-  width: 300px;
-  height: 255px;
+  width: 480px;
+  height: 270px;
   overflow: hidden;
   margin: 35px 15px 15px 0;
 }
 
 .projects-list-item > img {
-  width: 320px;
-  height: 255px;
+  width: 480px;
+  height: 270px;
 }
 .projects-list-item-info {
   display: none;
@@ -313,7 +313,7 @@
   z-index: 10;
   background: rgba(0, 0, 0, 0.5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
-  width: 300px;
+  width: 480px;
   color: #fff;
   padding: 10px;
   content: initial;
