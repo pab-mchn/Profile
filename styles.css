@@ -186,6 +186,7 @@
 /*About SkillS SECTION CONTAINER*/
 .about-skills-section-container {
   display: flex;
+  position: relative;
   background: linear-gradient(to bottom, #131414, #2d2e30);
   height: 80vh;
 }
