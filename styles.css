@@ -149,27 +149,25 @@
 /*MAIN SECTION STYLES*/
 
 .main-section-container {
-  display: flex;
+  position: relative;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
 }
 .main-section-text {
-  background: linear-gradient(to bottom, #131414, #2d2e30);
-  height: 80vh;
-  width: 50%;
-}
-.main-section-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
+  height: 100vh;
+  padding-top: 25vh;
 }
 .main-section-text > h1 {
   color: #fff;
-  margin: 5px;
+  font-size: 35px;
+  margin: 15px;
 }
 .main-section-text > h2 {
   color: var(--lightred);
-  margin: 5px;
+  font-size: 30px;
+  margin: 15px;
 }
 
 .main-section-text > a {
@@ -177,8 +175,8 @@
 }
 .main-section-text > ul > a > i {
   color: var(--white);
-  margin: 5px;
-  font-size: 25px;
+  margin: 15px;
+  font-size: 28px;
 }
 
 .main-section-text > ul > a > i:hover {
@@ -426,4 +424,11 @@ input[type="submit"] {
 
 .flash-success {
   border: 2px solid #127247;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
 }
