@@ -20,7 +20,7 @@ projects.forEach((project) => {
                 <h3>${project.name} </h3>
                 <h6>${project.projectDescription}</h6>
                 <p><small>${project.technologyDescription}</small></p>
-                <p><span><a class="projects-list-item-info-link" href="${project.linkProject}">visit the site</a></span> - <span><a class="projects-list-item-info-link" href="${project.linkcode}">visit the code</a></span>
+                <p><span><a class="projects-list-item-info-link" href="${project.linkProject}">visit the site</a></span>
                 </div>
             `;
   projectListContainer.append(projectContent);
