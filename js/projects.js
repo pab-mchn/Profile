@@ -6,8 +6,7 @@ const projects = [
     projectDescription: "The free online platform offers peer support and self support options",
     technologyDescription:
       "In the Mind Support developer team I work on the creation, development and maintenance of the mobile application and on website maintenance and improvements",
-    linkProject: "https://pab-mich.github.io/venice-films/",
-    linkcode: "https://github.com/pab-mich/venice-films",
+    linkProject: "https://mindsupport.eu/en/home",
   },
   {
     id: 2,
