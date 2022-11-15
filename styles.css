@@ -290,6 +290,20 @@
   text-decoration: none;
   color: var(--brightblue);
 }
+
+/*Media querys for projects items*/
+
+@media screen and (max-width: 600px) {
+  .projects-list-item {
+    width: 300px;
+    height: 200px;
+  }
+
+  .projects-list-item > img {
+    width: 300px;
+    height: 200px;
+  }
+}
 /*projects section mibile styles*/
 @media screen and (max-width: 768px) {
   .projects-section-title {
