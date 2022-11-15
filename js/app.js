@@ -2,11 +2,14 @@
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".nav-menu");
 
-menu.addEventListener("click", function () {
+const dinamicMenu = () => {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
-});
+};
 
+menu.addEventListener("click", dinamicMenu);
+
+menuLinks.addEventListener("click", dinamicMenu);
 //dinamic projects
 
 const projectListContainer = document.getElementById("projects-list-container");
