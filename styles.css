@@ -1,6 +1,6 @@
 /*GENERAL STYLES*/
 :root {
-  --darkgray: #1f2022;
+  --darkgray: #131414;
   --lightgray: #2d2e30;
   --brightblue: #2950ff;
   --white: #fff;
@@ -13,10 +13,9 @@
   font-family: "Roboto", sans-serif;
 }
 .nav-container {
-  background-color: #131414;
-  position: sticky;
+  background-color: var(--darkgray);
+  position: relative;
   z-index: 20;
-  top: 0;
 }
 
 /*NAVBAR RESPONSIVE STYLES*/
@@ -43,7 +42,7 @@
 }
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(4, auto);
   list-style: none;
   text-align: center;
   width: 70%;
@@ -172,16 +171,22 @@
 .main-section-text > a {
   display: inline;
 }
-.main-section-text > ul > a > i {
+.main-icon {
   color: var(--white);
   margin: 15px;
   font-size: 32px;
 }
 
-.main-section-text > ul > a > i:hover {
-  color: var(--brightblue);
+#main-email:hover {
+  color: #e94335;
+  cursor: pointer;
 }
-
+#main-youtube:hover {
+  color: #bb201d;
+}
+#main-github:hover {
+  color: #0a0909;
+}
 /*About SkillS SECTION CONTAINER*/
 .about-skills-section-container {
   display: flex;
@@ -335,7 +340,7 @@
 .form-modal-content {
   margin: 0 auto;
   padding: 8px;
-  background-color: #131414;
+  background-color: var(--darkgray);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,7 +415,7 @@ input[type="submit"] {
 /*footer styles*/
 footer {
   height: 80px;
-  background: linear-gradient(to bottom, #131414, #2d2e30);
+  background: var(--darkgray);
   display: flex;
   justify-content: center;
   align-items: center;

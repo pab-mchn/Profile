@@ -4,9 +4,10 @@ const contact = document.getElementById("contact");
 const formModalContainer = document.getElementById("form-modal-container");
 const btn = document.getElementById("button");
 const showAlert = document.getElementById("showAlert");
+const mainEmail = document.getElementById("main-email");
 showAlert.style.display = "none";
 
-contact.addEventListener("click", () => {
+const displayContactForm = () => {
   formModalContainer.innerHTML = "";
   formModalContainer.style.display = "block";
 
@@ -20,7 +21,7 @@ contact.addEventListener("click", () => {
   const modalbutton = document.createElement("h3");
   modalbutton.innerText = "❌";
   modalbutton.className = "modal-header-button";
-
+  modalbutton.style.cursor = "pointer";
   modalHeader.append(modalbutton);
 
   modalbutton.addEventListener("click", () => {
@@ -109,13 +110,7 @@ contact.addEventListener("click", () => {
       }
     );
   });
-});
-
-//code for email js
-
-// When the user clicks anywhere outside of the modal, close it
-formModalContainer.onclick = function (event) {
-  if (event.target == formModalContainer) {
-    formModalContainer.style.display = "none";
-  }
 };
+
+contact.addEventListener("click", displayContactForm);
+mainEmail.addEventListener("click", displayContactForm);
