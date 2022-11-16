@@ -336,7 +336,6 @@
   margin: 0 auto;
   padding: 8px;
   background-color: #131414;
-  border: 1px solid var(--brightblue);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -62,6 +62,7 @@ contact.addEventListener("click", () => {
   let btn = document.createElement("input");
   btn.setAttribute("id", "button");
   btn.setAttribute("type", "submit");
+  btn.setAttribute("value", "Send Message");
 
   formContent.append(btn);
 
