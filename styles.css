@@ -4,7 +4,7 @@
   --lightgray: #2d2e30;
   --brightblue: #2950ff;
   --white: #fff;
-  --lightred: #f9433dcc;
+  --lightred: #f93831cc;
 }
 * {
   box-sizing: border-box;
@@ -150,8 +150,11 @@
 .main-section-container {
   position: relative;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
   width: 100%;
+  background-image: url("images/wall.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .main-section-text {
   color: var(--white);
@@ -239,8 +242,11 @@
 }
 /*PROJECTS SECTION STYLES*/
 .projects-section-container {
-  background: rgba(0, 0, 0, 0.5);
   position: relative;
+  background-image: url("images/wall.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .projects-section-title {
