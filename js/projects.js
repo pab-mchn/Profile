@@ -5,7 +5,7 @@ const projects = [
     name: "KultNow",
     projectDescription: "An app to bring culture creators and culture enthusiasts together through an algorithm.",
     technologyDescription: "",
-    role: "Role in te team: Front-End Web Developer (currently on that)",
+    role: "Role in te team: Front-End Web Developer (currently in this)",
     linkInfo: "https://www.linkedin.com/company/kultnow/",
     linkProject: "https://www.linkedin.com/company/kultnow/",
   },

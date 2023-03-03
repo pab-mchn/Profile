@@ -94,11 +94,9 @@ body {
     opacity: 0;
     transition: all 0.5s ease;
   }
-
   #navbar-logo {
     margin-left: 20px;
   }
-
   .nav-menu.active {
     background: var(--darkgray);
     left: 0;
@@ -111,17 +109,14 @@ body {
     width: 100%;
     display: table;
   }
-
   .nav-links:hover {
     background-color: var(--brightblue);
     color: var(--white);
     transition: all 0.4s ease-out;
   }
-
   .navbar {
     width: 100%;
   }
-
   #mobile-menu {
     position: absolute;
     top: 20%;
@@ -143,12 +138,7 @@ body {
   #mobile-menu.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
 }
-
 /*particles backgorund*/
 
 #particles-js {
@@ -202,8 +192,8 @@ body {
 
 /*PROJECTS SECTION STYLES*/
 .projects-section-container {
-  margin-left: 95px;
-  margin-right: 95px;
+  margin-left: 85px;
+  margin-right: 85px;
 }
 
 .projects-section-title {
@@ -213,11 +203,10 @@ body {
 
 .projects-list-container {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
-  padding-bottom: 35px;
+  justify-content: center;
 }
 
 .projects-list-item {
@@ -225,8 +214,7 @@ body {
   float: left;
   width: 480px;
   height: 270px;
-  overflow: hidden;
-  margin: 35px 15px 15px 0;
+  margin: 25px 20px 20px 25px;
   border: 1px #131414 solid;
 }
 
@@ -289,21 +277,26 @@ body {
     margin-left: 25px;
     margin-right: 25px;
   }
-  .projects-list-container {
-    overflow-x: auto;
-    flex-wrap: nowrap;
+  .projects-list-item {
+    width: 340px;
+    height: 290px;
+    flex: 0 0 auto;
+    position: relative;
+    float: none;
   }
+
+  .projects-list-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: unset;
+  }
+
   ::-webkit-scrollbar {
     display: none;
   }
-  .projects-list-item {
-    flex: 0 0 auto;
-    width: 340px;
-    height: 290px;
-  }
 
   .projects-section-title {
-    text-align: left;
+    text-align: center;
   }
 
   .projects-list-item-info {
