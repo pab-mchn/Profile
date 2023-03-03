@@ -20,10 +20,14 @@ projects.forEach((project) => {
   projectContent.innerHTML = `
                 <img src="${project.img}">
                 <div class="projects-list-item-info">
-                <h3>${project.name} </h3>
-                <h6>${project.projectDescription}</h6>
-                <p><small>${project.technologyDescription}</small></p>
-                <p><span><a class="projects-list-item-info-link" href="${project.linkProject}">visit the site</a></span>
+                <h2>${project.name} </h2>
+                <h4>${project.projectDescription}</h4>
+                <p>${project.role}</p>
+                <div class="projects-list-item-links">
+                <p><span><a class="btn-gradient-mobile" href="${project.linkInfo}" target="_blank" >More</a>              
+                <a class="btn-gradient-mobile" href="${project.linkProject}" target="_blank">Live</a></span>
+                </div>
+                
                 </div>
             `;
   projectListContainer.append(projectContent);

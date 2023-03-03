@@ -15,11 +15,6 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/ee3d08c0a8.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-      emailjs.init("gCBjK_qQC8VIA3mqk");
-    </script>
     <title>Pab Mchn.</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -27,7 +22,7 @@
     <!--nav - responsive menu-->
     <div class="nav-container">
       <nav class="navbar">
-        <h1 id="navbar-logo">PAB MCHN.</h1>
+        <h1 id="navbar-logo">PORTFOLIO.</h1>
         <div class="menu-toggle active" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -35,75 +30,42 @@
         </div>
         <ul class="nav-menu">
           <li>
-            <a href="#about-skills-section-container" class="nav-links">ABOUT</a>
+            <a href="https://www.youtube.com/channel/UCrP5xPLzqW3k6ssG8C7lHVw" target="_blank" class="nav-links"
+              >VIDEOS</a
+            >
           </li>
           <li>
-            <a href="https://www.youtube.com/channel/UCrP5xPLzqW3k6ssG8C7lHVw" class="nav-links">VIDEOS</a>
+            <a href="https://github.com/pab-mchn" target="_blank" class="nav-links">GITHUB</a>
           </li>
           <li>
             <a href="#projects-section-container" class="nav-links">PROJECTS</a>
           </li>
-          <li class="nav-links" id="contact">CONTACT</li>
+          <li id="contact"><a class="nav-links" href="mailto:pab.michelini@gmail.com">CONTACT</a></li>
         </ul>
       </nav>
     </div>
-
-    <!--Alert content for emails -->
-    <div id="showAlert" class="flash flash-success alert alert-dismissible fade show" role="alert"></div>
-
-    <!--modal content form section-->
-    <div id="form-modal-container" class="form-modal-container"></div>
-        
-    <!--section video-->
-    <!-- <video autoplay muted loop id="myVideo">
-      <source src="images/smoke.mp4" />
-    </video> -->
-
-     <!--main section-->
+    <div id="particles-js"></div>
+    <!--Main section-->
     <div class="main-section-container">
-      <div class="main-section-text">
-        <h1>PABLO MCHN</h1>
-        <h2>WEB DEVELOPER & CONTENT CREATOR</h2>
-        <ul>
-          <a href="https://github.com/pab-mchn/"><i class="fab fa-github main-icon" id="main-github"></i></a>
-          <a href="https://www.youtube.com/channel/UCrP5xPLzqW3k6ssG8C7lHVw"><i class="fab fa-youtube main-icon" id="main-youtube"></i></a>
-          <i class="fa fa-envelope main-icon" id="main-email"></i>
-        </ul>
-    </div>
-
-    <!--about and skill section -->
-    <div class="about-skills-section-container" id="about-skills-section-container">
-      <div class="about-skill-section-text">
-        <h1>Hi,</h1>
-        <p>
-          If I have to say something short about me, I would say that I am passionate about technology, particularly web development. As a north I am always motivated to generate ideas and make them happen! I love to share knowledge with other people and be part of new projects where I can apply my knowledge and keep growing.
-        </p>
-        <h3>MY TECHNICAL SKILLS</h3>
-      
-        <ul>
-          <i class="fa-brands fa-html5"></i>
-          <i class="fa-brands fa-css3-alt"></i>
-          <i class="fa-brands fa-git-alt"></i>
-          <i class="fa-brands fa-js"></i>
-          <i class="fa-brands fa-react"></i>
-          <i class="fa-brands fa-node-js"></i>
-          <i class="fa-solid fa-database"></i>
-          <i class="fa-solid fa-gem"></i>
-        </ul>
-        <p>HTML - CSS - Git - Javascript - ReactJs - NodeJs - Express - MongoDB - Ruby on Rails - PostgreSQL</p>
+      <div class="main-section-text-container">
+        <h1>Hi! I'm</h1>
+        <h1>Pablo Michelini,</h1>
+        <h2>Web Developer & content Creator</h2>
+        <div class="main-section-contact-button">
+          <a class="btn btn-gradient" href="mailto:pab.michelini@gmail.com">Contact Me</a>
+        </div>
       </div>
     </div>
-
     <!--projects section -->
     <div class="projects-section-container" id="projects-section-container">
       <h1 class="projects-section-title">MY PROJECTS & EXPIRIENCE</h1>
+
       <ul class="projects-list-container" id="projects-list-container"></ul>
     </div>
 
-    <!--footer-->
-    <footer><p>Pablo Mchn - Web Developer & Content Creator</p></footer>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <script src="./js/projects.js"></script>
     <script src="./js/app.js"></script>
-    <script src="./js/contact.js"></script>
   </body>
 </html>
