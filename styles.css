@@ -192,9 +192,7 @@ body {
   .main-section-text-container {
     margin-left: 25px;
   }
-  .text-last-name {
-    display: none;
-  }
+
   .main-section-text-container h1 {
     font-size: 3.5em;
   }
@@ -317,3 +315,4 @@ body {
     padding-inline-start: 0px;
   }
 }
+/*FOOTER STYLES*/
