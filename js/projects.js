@@ -5,7 +5,7 @@ const projects = [
     name: "KultNow",
     projectDescription: "An app to bring culture creators and culture enthusiasts together through an algorithm.",
     technologyDescription: "",
-    role: "Role in te team: Front-End Web Developer (currently in this)",
+    role: "Role in te team: Front-End Web Developer (currently)",
     linkInfo: "https://www.linkedin.com/company/kultnow/",
     linkProject: "https://www.linkedin.com/company/kultnow/",
   },
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     img: "https://res.cloudinary.com/pabcode/image/upload/v1674052784/onTheCode/onthecode_banner_cegflx.jpg",
     name: "on the code",
-    projectDescription: "Youtube chanel for coding",
+    projectDescription: "Youtube channel about programming tutorials",
     technologyDescription:
       "I Made coding javascript tutorials in my youtube chanel, showing step by step how to create coding projects",
     role: "Role: Content Creator",

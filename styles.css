@@ -18,8 +18,9 @@ body {
 }
 .nav-container {
   background-color: var(--darkgray);
-  position: relative;
   z-index: 20;
+  position: sticky;
+  top: 0;
 }
 
 /*NAVBAR RESPONSIVE STYLES*/
@@ -81,6 +82,7 @@ body {
 @media screen and (max-width: 800px) {
   .nav-container {
     position: sticky;
+    top: 0;
   }
   .nav-menu {
     display: grid;
@@ -147,6 +149,7 @@ body {
 
 #particles-js {
   width: 100%;
+  height: 100%;
   position: fixed;
 }
 
@@ -221,8 +224,8 @@ body {
 .projects-list-item {
   position: relative;
   float: left;
-  width: 480px;
-  height: 270px;
+  width: 440px;
+  height: 230px;
   margin: 25px 20px 20px 25px;
   border: 1px #131414 solid;
 }
@@ -289,8 +292,8 @@ body {
   }
 
   .projects-list-item {
-    width: 340px;
-    height: 290px;
+    width: 390px;
+    height: 240px;
     flex: 0 0 auto;
     position: relative;
     float: none;
@@ -315,17 +318,17 @@ body {
     padding-inline-start: 0px;
   }
 }
-/*FOOTER STYLES*/
-#falcon {
-  animation: myfirst 8s ease;
+/*animation STYLES*/
+#astronaut-fly {
+  animation: fly 8s ease;
   position: absolute;
   width: 250px;
   top: 10%;
   left: 35%;
 }
 
-#astronaut {
-  animation: myanim 4s infinite;
+#astronaut-jump {
+  animation: jump 4s infinite;
   position: absolute;
   width: 250px;
   top: 10%;
@@ -333,7 +336,7 @@ body {
   display: none;
 }
 
-@keyframes myfirst {
+@keyframes fly {
   0% {
     top: -20%;
     left: 5%;
@@ -348,7 +351,7 @@ body {
     left: 35%;
   }
 }
-@keyframes myanim {
+@keyframes jump {
   30% {
     margin-top: 30px;
   }

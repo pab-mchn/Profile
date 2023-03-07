@@ -31,6 +31,18 @@ projects.forEach((project) => {
                 </div>
             `;
   projectListContainer.append(projectContent);
+
+  // const projectInfo = projectContent.querySelector(".btn-gradient-mobile");
+  // projectInfo.addEventListener("click", () => {
+  //   Swal.fire({
+  //     title: "Sweet!",
+  //     text: "Modal with a custom image",
+  //     imageUrl: "https://unsplash.it/400/200",
+  //     imageWidth: 400,
+  //     color: "red",
+  //     imageAlt: "Custom image",
+  //   });
+  // });
 });
 
 //link in logo to go to the top
@@ -40,11 +52,11 @@ navbarLogo.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-const astronaut = document.getElementById("falcon");
-const animation = document.getElementById("astronaut");
+const astronautFly = document.getElementById("astronaut-fly");
+const astronautJump = document.getElementById("astronaut-jump");
 
 //animation
 setTimeout(() => {
-  astronaut.style.display = "none";
-  animation.style.display = "block";
+  astronautFly.style.display = "none";
+  astronautJump.style.display = "block";
 }, "4000");
