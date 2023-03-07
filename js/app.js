@@ -34,9 +34,17 @@ projects.forEach((project) => {
 });
 
 //link in logo to go to the top
-//
 const navbarLogo = document.getElementById("navbar-logo");
 
 navbarLogo.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
+
+const astronaut = document.getElementById("falcon");
+const animation = document.getElementById("astronaut");
+
+//animation
+setTimeout(() => {
+  astronaut.style.display = "none";
+  animation.style.display = "block";
+}, "4000");
