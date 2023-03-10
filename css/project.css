@@ -1,0 +1,117 @@
+/*PROJECTS SECTION STYLES*/
+.projects-section-container {
+  margin-left: 85px;
+  margin-right: 85px;
+  height: 100vh;
+}
+
+.projects-section-title {
+  color: var(--white);
+  text-align: center;
+}
+
+.projects-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.projects-list-item {
+  position: relative;
+  float: left;
+  width: 440px;
+  height: 230px;
+  margin: 25px 20px 20px 25px;
+  border: 1px #131414 solid;
+}
+
+.projects-list-item > img {
+  width: 100%;
+  height: 100%;
+}
+.projects-list-item-info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: var(--darkgray);
+  transition: 0.3s ease;
+  width: auto;
+  color: #fff;
+  padding: 10px 10px 0 25px;
+  content: initial;
+  width: 100%;
+  height: 100%;
+  line-height: 2;
+  border: solid 0.5px var(--brightblue);
+}
+.projects-list-item-info h2 {
+  text-align: center;
+}
+
+.projects-list-item:hover .projects-list-item-info {
+  display: block;
+}
+.projects-list-item-info-link {
+  text-decoration: none;
+  color: var(--brightblue);
+}
+/*Links in projects cards*/
+.projects-list-item-links {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 20px;
+}
+.btn-gradient-mobile {
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: transparent;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 1px solid var(--brightblue);
+  margin-right: 5px;
+}
+
+.btn-gradient-mobile:hover {
+  background: var(--brightblue);
+  color: var(--white);
+}
+
+/*Media querys for projects items*/
+
+@media screen and (max-width: 800px) {
+  .projects-section-container {
+    margin-left: 25px;
+    margin-right: 0px;
+  }
+
+  .projects-list-item {
+    width: 390px;
+    height: 240px;
+    flex: 0 0 auto;
+    position: relative;
+    float: none;
+    margin: 25px 20px 0px 25px;
+  }
+
+  .projects-list-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: unset;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .projects-list-item-info {
+    padding: 10px 5px 0 10px;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+}

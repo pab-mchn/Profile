@@ -1,0 +1,29 @@
+/*animation STYLES*/
+#astronaut-fly {
+  animation: fly 8s ease;
+  position: absolute;
+  width: 250px;
+  top: 15%;
+  left: 42%;
+}
+
+@keyframes fly {
+  0% {
+    top: -20%;
+    left: 7%;
+  }
+
+  25% {
+    top: 5%;
+    left: 27%;
+  }
+
+  50% {
+    top: 10%;
+    left: 37%;
+  }
+  100% {
+    top: 15%;
+    left: 42%;
+  }
+}

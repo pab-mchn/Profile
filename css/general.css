@@ -1,0 +1,25 @@
+:root {
+  --darkgray: #131414;
+  --lightgray: #2d2e30;
+  --brightblue: #2950ff;
+  --white: #fff;
+  --lightred: #f93831cc;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--darkgray);
+}
+
+/*particles backgorund*/
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}

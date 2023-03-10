@@ -10,8 +10,8 @@ const dinamicMenu = () => {
 menu.addEventListener("click", dinamicMenu);
 
 menuLinks.addEventListener("click", dinamicMenu);
-//dinamic projects
 
+//dinamic projects
 const projectListContainer = document.getElementById("projects-list-container");
 
 projects.forEach((project) => {
@@ -53,10 +53,3 @@ navbarLogo.addEventListener("click", () => {
 });
 
 const astronautFly = document.getElementById("astronaut-fly");
-const astronautJump = document.getElementById("astronaut-jump");
-
-//animation
-setTimeout(() => {
-  astronautFly.style.display = "none";
-  astronautJump.style.display = "block";
-}, "4000");
