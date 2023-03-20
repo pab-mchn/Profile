@@ -2,28 +2,56 @@
 #astronaut-fly {
   animation: fly 8s ease;
   position: absolute;
-  width: 250px;
-  top: 15%;
-  left: 42%;
+  width: 300px;
+  top: 25%;
+  left: 50%;
 }
 
 @keyframes fly {
   0% {
     top: -20%;
-    left: 7%;
+    left: 50%;
   }
 
   25% {
-    top: 5%;
-    left: 27%;
+    top: 10%;
+    left: 50%;
   }
 
   50% {
-    top: 10%;
-    left: 37%;
+    top: 15%;
+    left: 50%;
   }
   100% {
-    top: 15%;
-    left: 42%;
+    top: 25%;
+    left: 50%;
+  }
+}
+/*mediaquerys img and animation*/
+@media screen and (max-width: 800px) {
+  #astronaut-fly {
+    width: 250px;
+    top: 23%;
+    left: 33%;
+  }
+  @keyframes fly {
+    0% {
+      top: -20%;
+      left: 33%;
+    }
+
+    25% {
+      top: 10%;
+      left: 33%;
+    }
+
+    50% {
+      top: 15%;
+      left: 33%;
+    }
+    100% {
+      top: 23%;
+      left: 33%;
+    }
   }
 }

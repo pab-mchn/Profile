@@ -2,7 +2,8 @@
 .projects-section-container {
   margin-left: 85px;
   margin-right: 85px;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .projects-section-title {
@@ -16,13 +17,15 @@
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
+  max-width: 1720px;
+  scroll-behavior: smooth;
 }
 
 .projects-list-item {
   position: relative;
   float: left;
-  width: 440px;
-  height: 230px;
+  width: 300px;
+  height: 290px;
   margin: 25px 20px 20px 25px;
   border: 1px #131414 solid;
 }
@@ -58,6 +61,7 @@
   text-decoration: none;
   color: var(--brightblue);
 }
+
 /*Links in projects cards*/
 .projects-list-item-links {
   margin-top: 10px;
@@ -82,10 +86,11 @@
 
 /*Media querys for projects items*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1204px) {
   .projects-section-container {
     margin-left: 25px;
     margin-right: 0px;
+    width: 90%;
   }
 
   .projects-list-item {
@@ -93,8 +98,7 @@
     height: 240px;
     flex: 0 0 auto;
     position: relative;
-    float: none;
-    margin: 25px 20px 0px 25px;
+    margin: 25px 20px 0px 0px;
   }
 
   .projects-list-container {
@@ -109,6 +113,72 @@
 
   .projects-list-item-info {
     padding: 10px 5px 0 10px;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+}
+
+/*main-project-list-container*/
+
+.main-projects-section-container {
+  display: flex;
+  justify-content: center;
+}
+.main-projects-list-container {
+  list-style-type: none;
+}
+
+.main-projects-list-item {
+  position: relative;
+  width: 980px;
+  height: 200px;
+  margin-top: 25px;
+  margin: 25px 20px 20px 25px;
+  border: 1px #131414 solid;
+  background-color: #ead430;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-projects-list-item h1 {
+  font-family: "Special Elite", cursive;
+}
+
+.main-projects-list-item-info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: var(--darkgray);
+  transition: 0.3s ease;
+  width: auto;
+  color: #fff;
+
+  content: initial;
+  width: 100%;
+  height: 100%;
+  line-height: 2;
+  border: solid 0.5px var(--brightblue);
+}
+.projects-list-item-info h2 {
+  text-align: center;
+}
+.main-projects-list-item:hover .projects-list-item-info {
+  display: block;
+}
+.main-projects-list-item-info-link {
+  text-decoration: none;
+  color: var(--brightblue);
+}
+
+@media screen and (max-width: 800px) {
+  .main-projects-list-item {
+    width: 90%;
+    height: 260px;
+    position: relative;
+    float: none;
   }
 
   ul {

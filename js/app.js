@@ -18,6 +18,7 @@ projects.forEach((project) => {
   let projectContent = document.createElement("li");
   projectContent.className = "projects-list-item";
   projectContent.innerHTML = `
+
                 <img src="${project.img}">
                 <div class="projects-list-item-info">
                 <h2>${project.name} </h2>
@@ -45,6 +46,27 @@ projects.forEach((project) => {
   // });
 });
 
+//dinamic main projects
+const mainProjectListContainer = document.getElementById("main-projects-list-container");
+mainProject.forEach((project) => {
+  let mainProjectContent = document.createElement("li");
+  mainProjectListContainer.className = "main-projects-list-item";
+  mainProjectListContainer.innerHTML = `
+                <h1>on the code</h1>
+                <div class="projects-list-item-info">
+                <h2>${project.name} </h2>
+                <h4>${project.projectDescription}</h4>
+                <p>${project.role}</p>
+                <div class="projects-list-item-links">
+                <p><span><a class="btn-gradient-mobile" href="${project.linkInfo}" target="_blank" >More</a>
+                <a class="btn-gradient-mobile" href="${project.linkProject}" target="_blank">Live</a></span>
+                </div>
+
+                </div>
+            `;
+  projectListContainer.append(mainProjectContent);
+});
+
 //link in logo to go to the top
 const navbarLogo = document.getElementById("navbar-logo");
 
@@ -52,4 +74,15 @@ navbarLogo.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-const astronautFly = document.getElementById("astronaut-fly");
+//navegation projects
+const arrowLeft = document.getElementById("navegation-arrow-left");
+const arrowRight = document.getElementById("navegation-arrow-right");
+const projectContent = document.getElementById("projects-list-container");
+
+arrowLeft.addEventListener("click", () => {
+  projectContent.scrollLeft -= 500;
+});
+
+arrowRight.addEventListener("click", () => {
+  projectContent.scrollLeft += 500;
+});

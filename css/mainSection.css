@@ -2,11 +2,13 @@
 .main-section-container {
   margin-top: 20vh;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .main-section-text-container {
   color: var(--white);
-  margin-left: 95px;
+  margin-right: 20%;
 }
 .main-section-text-container h1 {
   font-size: 4em;
@@ -36,6 +38,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .main-section-container {
+    margin-top: 30vh;
+  }
   .main-section-text-container {
     margin-left: 25px;
   }
