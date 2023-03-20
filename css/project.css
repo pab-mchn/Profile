@@ -176,7 +176,7 @@
 @media screen and (max-width: 800px) {
   .main-projects-list-item {
     width: 90%;
-    height: 260px;
+    height: 280px;
     position: relative;
     float: none;
   }
