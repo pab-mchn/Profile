@@ -4,27 +4,27 @@
   position: absolute;
   width: 300px;
   top: 25%;
-  left: 50%;
+  left: 53%;
 }
 
 @keyframes fly {
   0% {
     top: -20%;
-    left: 50%;
+    left: 53%;
   }
 
   25% {
     top: 10%;
-    left: 50%;
+    left: 53%;
   }
 
   50% {
     top: 15%;
-    left: 50%;
+    left: 53%;
   }
   100% {
     top: 25%;
-    left: 50%;
+    left: 53%;
   }
 }
 /*mediaquerys img and animation*/
@@ -50,7 +50,7 @@
       left: 33%;
     }
     100% {
-      top: 23%;
+      top: 24%;
       left: 33%;
     }
   }
