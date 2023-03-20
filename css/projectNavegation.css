@@ -6,7 +6,9 @@
   justify-content: center;
   align-items: center;
 }
-
+.projects-section-navegation-container h2 {
+  text-align: center;
+}
 #navegation-arrow-left {
   position: absolute;
   left: 10%;
