@@ -13,17 +13,6 @@ const mainProject = [
 ];
 
 const projects = [
-  // {
-  //   id: 3,
-  //   img: "https://res.cloudinary.com/pabcode/image/upload/v1674052784/onTheCode/onthecode_banner_cegflx.jpg",
-  //   name: "on the code",
-  //   projectDescription: "Youtube channel about programming tutorials",
-  //   technologyDescription:
-  //     "I Made coding javascript tutorials in my youtube chanel, showing step by step how to create coding projects",
-  //   role: "Role: Content Creator and Mentor. Creation of programming tutorials, project consulting",
-  //   linkInfo: "https://www.youtube.com/@onthecode/about",
-  //   linkProject: "https://www.youtube.com/channel/UCrP5xPLzqW3k6ssG8C7lHVw",
-  // },
   {
     id: 1,
     img: "https://res.cloudinary.com/pabcode/image/upload/v1676282675/onTheCode/kultnow_o3jfsb.png",
@@ -32,7 +21,7 @@ const projects = [
     technologyDescription: "",
     role: "Role in te team: Front-End Web Developer (currently)",
     linkInfo: "https://www.linkedin.com/company/kultnow/",
-    linkProject: "https://www.linkedin.com/company/kultnow/",
+    linkProject: "https://kultnow.com/",
   },
   {
     id: 2,

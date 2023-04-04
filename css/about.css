@@ -36,10 +36,13 @@
 }
 
 @media screen and (max-width: 1088px) {
+  .about-section-img-container {
+    margin-right: 15px;
+  }
   .about-section-container {
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 25vh;
+    margin-bottom: 30vh;
   }
   .about-section-text-container {
     margin-top: 40px;
@@ -51,6 +54,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .about-section-img {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+  }
+  .about-section-container {
+    margin-right: 10%;
+  }
   .about-section-text-img {
     height: 30px;
   }
