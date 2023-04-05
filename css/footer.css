@@ -1,0 +1,32 @@
+footer {
+  text-align: center;
+  color: #fff;
+  height: 12vh;
+  margin-top: 14vh;
+  background-color: var(--darkgray);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-img {
+  height: 30px;
+}
+
+.footer-email {
+  height: 25px;
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p {
+    margin-top: 3px;
+  }
+}

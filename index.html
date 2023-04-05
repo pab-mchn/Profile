@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pablo Michelini profile website" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <meta name="description" content="Pablo Michelini Profile" />
+    <script src="https://kit.fontawesome.com/ee3d08c0a8.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Special+Elite&display=swap"
       rel="stylesheet"
@@ -18,6 +18,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('gCBjK_qQC8VIA3mqk')
+  </script>
     <script src="https://kit.fontawesome.com/ee3d08c0a8.js" crossorigin="anonymous"></script>
     <title>Pab Mchn.</title>
     <link rel="stylesheet" href="./css/styles.css" />
@@ -34,7 +40,7 @@
         </div>
         <ul class="nav-menu">
           <li>
-            <a href="#about-section-container" class="nav-links"
+            <a href="#about&skills" class="nav-links"
               >ABOUT&SKILLS</a
             >
           </li>
@@ -47,9 +53,9 @@
             <a href="https://github.com/pab-mchn" target="_blank" class="nav-links">GITHUB</a>
           </li>
           <li>
-            <a href="#projects-section-container" class="nav-links">PROJECTS</a>
+            <a href="#projects" class="nav-links">PROJECTS</a>
           </li>
-          <li id="contact"><a class="nav-links" href="mailto:pab.michelini@gmail.com">CONTACT</a></li>
+          <li><a class="nav-links" href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -65,21 +71,21 @@
         <h1></h1>
         <h2>Web Developer & content Creator</h2>
         <div class="main-section-contact-button">
-          <a class="btn btn-gradient" href="mailto:pab.michelini@gmail.com">Contact Me</a>
+          <a class="btn btn-gradient" href="#contact">Contact Me</a>
         </div>
       </div>
     </div>
 
     <!--About Me-->
-    <div class="about-section-container" id="about-section-container">
+    <span id="about&skills"></span>
+    <div class="about-section-container">
       <div class="about-section-img-container">
       <img class="about-section-img" src="media/general/image-profile.png" alt="profile" />
     </div>
       <div class="about-section-text-container">
-        <h1>About me</h1>
+        <h1>About Me</h1>
         <p class="about-section-text">
-          Discovering the world of web development has literally changed my life.
-          Since then I am passionate about sharing knowledge with others, developing websites and being part of new projects where I can apply my knowledge and keep growing.
+          Discovering the world of programming has literally changed my life. Since then I really enjoy sharing knowledge with others, developing websites and being part of projects where I can apply my knowledge and keep growing.
           <h1>Skills</h1>
           <p class="about-section-text">I work mostly on the Front-End with technologies like React js and Typescript. I also have experience creating Back-End in technologies like Ruby on Rails and Nodejs using relational and non-relational databases. </p>
           <P class="about-section-text">FRONTEND</P>
@@ -104,8 +110,8 @@
     </div>
 
     <!--projects section -->
-    <h1 class="projects-section-title" id="projects-section-container">SOME PROJECTS & EXPIRIENCES</h1>
-
+    <span id="projects"><!--id for navgaiton link--></span>
+    <h1 class="projects-section-title" >SOME PROJECTS & EXPERIENCES</h1>
     <div class="main-projects-section-container" id="main-projects-section-container">
       <ul class="main-projects-list-item" id="main-projects-list-container"></ul>
     </div>
@@ -119,10 +125,51 @@
     <div class="projects-section-container">
       <ul class="projects-list-container" id="projects-list-container"></ul>
     </div>
+    <div class="personal-projects-container">
+      <h3>More projects comming soon...</h3>
+      <a href="https://github.com/pab-mchn" target="_blank" ><img class="personal-project-icon"src="media/social/github.png" alt="github-icon" /></a>
+    </div>
+
+    <!--contact-->
+    <span id="contact"><!--navegation link--></span>
+    <div class="contact-section-container">
+    <form id="form">
+      <h1 class="contact-section-title">CONTACT</h1>
+      <div class="field">
+        <label for="user_name">Name</label>
+        <input type="text" name="user_name" id="user_name">
+      </div>
+      <div class="field">
+        <label for="user_email">Email</label>
+        <input type="email" name="user_email" id="user_email" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" id="message"></textarea>
+      </div>
+      <input type="submit" id="button" value="Send Email" >
+      <div class="contact-icon-container">
+        <p>Or use the application on your device</p>
+        <a href="mailto:onthecodenow@gmail.com"><img class="contact-icon"src="media/social/email_white.png" alt="email-icon" /></a>
+      </div>
+    </form>
+  </div>
+
 
     <!--footer-->
+    <footer>
+      <p>Web Developer & Content Creator</p>
+      <p>
+        <a href="https://www.youtube.com/channel/UCrP5xPLzqW3k6ssG8C7lHVw" target="_blank" ><img class="footer-img footer-youtube" src="media/social/youtube.png" alt="footer-youtube" /></a>
+        <a href="https://github.com/pab-mchn" target="_blank" ><img class="footer-img left" src="media/social/github.png" alt="footer-github" /></a>
+        <a href="#contact"><img class="footer-img footer-email left" src="media/social/email_envelop.png" alt="footer-email" /></a>
+        
+       
+      </p>
+    </footer>
 
     <script src="./js/particles.js"></script>
+    <script src="./js/contact.js"></script>
     <script src="./js/appParticles.js"></script>
     <script src="./js/projects.js"></script>
     <script src="./js/app.js"></script>

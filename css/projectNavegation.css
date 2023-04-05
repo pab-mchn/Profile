@@ -24,7 +24,7 @@
   cursor: pointer;
   font-size: 25px;
 }
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 1140px) {
   #navegation-arrow-right {
     display: block;
   }

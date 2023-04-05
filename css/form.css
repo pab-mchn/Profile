@@ -1,0 +1,93 @@
+.contact-section-container {
+  margin-left: 85px;
+  margin-right: 85px;
+  position: relative;
+  margin-top: 120vh;
+}
+.contact-section-title {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 8vh;
+}
+#form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 20vh;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--white);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+input[type="submit"] {
+  color: var(--white);
+  border: 1px solid var(--brightblue);
+  background-color: transparent;
+  transition: 0.3s ease;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--brightblue);
+}
+
+@media screen and (max-width: 800px) {
+  .contact-section-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.contact-icon-container {
+  color: var(--white);
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon {
+  height: 30px;
+  margin-left: 5px;
+}
+
+.contact-icon:hover {
+  padding: 1px;
+  transition: all 0.2s ease;
+}

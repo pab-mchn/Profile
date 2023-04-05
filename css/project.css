@@ -9,7 +9,7 @@
 .projects-section-title {
   color: var(--white);
   text-align: center;
-  margin-top: 15vh;
+  margin-top: 40vh;
 }
 
 .projects-list-container {
@@ -25,8 +25,8 @@
 .projects-list-item {
   position: relative;
   float: left;
-  width: 300px;
-  height: 250px;
+  width: 440px;
+  height: 220px;
   margin: 25px 20px 20px 25px;
   border: 1px #131414 solid;
 }
@@ -94,7 +94,7 @@
 
 /*Media querys for projects items*/
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 1140px) {
   .projects-section-container {
     margin-left: 25px;
     margin-right: 0px;
@@ -140,7 +140,7 @@
 
 .main-projects-list-item {
   position: relative;
-  width: 980px;
+  width: 920px;
   height: 180px;
   margin-top: 25px;
   margin: 25px 20px 20px 25px;
@@ -192,4 +192,23 @@
   ul {
     padding-inline-start: 0px;
   }
+}
+
+.personal-projects-container {
+  color: var(--white);
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personal-project-icon {
+  height: 40px;
+  margin-left: 5px;
+}
+
+.personal-project-icon:hover {
+  padding: 1px;
+  transition: all 0.2s ease;
 }
