@@ -25,6 +25,7 @@
     emailjs.init('gCBjK_qQC8VIA3mqk')
   </script>
     <script src="https://kit.fontawesome.com/ee3d08c0a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pab Mchn.</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -77,8 +78,8 @@
     </div>
 
     <!--About Me-->
-    <span id="about&skills"></span>
-    <div class="about-section-container">
+    <div id="about&skills"></div>
+    <div class="about-section-container" data-aos="fade-up">
       <div class="about-section-img-container">
       <img class="about-section-img" src="media/general/image-profile.png" alt="profile" />
     </div>
@@ -111,6 +112,7 @@
 
     <!--projects section -->
     <span id="projects"><!--id for navgaiton link--></span>
+    <div data-aos="fade-up">
     <h1 class="projects-section-title" >SOME PROJECTS & EXPERIENCES</h1>
     <div class="main-projects-section-container" id="main-projects-section-container">
       <ul class="main-projects-list-item" id="main-projects-list-container"></ul>
@@ -129,11 +131,12 @@
       <h3>More projects comming soon...</h3>
       <a href="https://github.com/pab-mchn" target="_blank" ><img class="personal-project-icon"src="media/social/github-logo_white.png" alt="github-icon" /></a>
     </div>
+  </div>
 
     <!--contact-->
     <span id="contact"><!--navegation link--></span>
     <div class="contact-section-container">
-    <form id="form">
+    <form id="form" data-aos="fade-up">
       <h1 class="contact-section-title">CONTACT</h1>
       <div class="field">
         <label for="user_name">Name</label>
@@ -174,5 +177,9 @@
     <script src="./js/projects.js"></script>
     <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
