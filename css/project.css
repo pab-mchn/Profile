@@ -94,7 +94,7 @@
 
 /*Media querys for projects items*/
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 900px) {
   .projects-section-container {
     margin-left: 25px;
     margin-right: 0px;

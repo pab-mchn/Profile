@@ -14,10 +14,8 @@ footer {
 .footer-img {
   height: 30px;
 }
-
-.footer-email {
-  height: 25px;
-  margin-bottom: 2px;
+.footer-img:hover {
+  padding: 1px;
 }
 
 @media screen and (max-width: 800px) {
@@ -26,7 +24,11 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  footer p {
+  .footer-text {
     margin-top: 3px;
+    margin-left: 15px;
+  }
+  .footer-img {
+    margin-top: 20px;
   }
 }
