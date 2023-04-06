@@ -4,12 +4,22 @@ scrollLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
     const targetId = link.getAttribute("href");
-    const myNavbarHeight = document.querySelector(".navbar").offsetHeight;
+    const navbarHeight = document.querySelector(".navbar").offsetHeight;
     let targetPosition = document.querySelector(targetId).offsetTop;
 
-    if (targetId !== "#special-section") {
-      targetPosition -= myNavbarHeight;
+    let offset = 0;
+
+    if (targetId === "#contact") {
+      if (window.innerWidth < 768) {
+        offset = navbarHeight - 520; // decrease the offset by 320 pixels on small screens
+      } else {
+        offset = navbarHeight - (45 * window.innerHeight) / 100; // decrease the offset by 5% of the viewport height on larger screens
+      }
+    } else {
+      offset = navbarHeight;
     }
+
+    targetPosition -= offset;
 
     window.scrollTo({
       top: targetPosition,
