@@ -93,6 +93,18 @@
 }
 
 /*Media querys for projects items*/
+@media screen and (max-width: 1139px) {
+  .projects-section-container {
+    margin-left: 10px;
+
+    width: 100%;
+  }
+
+  .projects-list-item {
+    width: 380px;
+    height: 220px;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .projects-section-container {
