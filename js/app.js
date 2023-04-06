@@ -67,13 +67,6 @@ mainProject.forEach((project) => {
   projectListContainer.append(mainProjectContent);
 });
 
-//link in logo to go to the top
-const navbarLogo = document.getElementById("navbar-logo");
-
-navbarLogo.addEventListener("click", () => {
-  window.scrollTo(0, 0);
-});
-
 //navegation projects
 const arrowLeft = document.getElementById("navegation-arrow-left");
 const arrowRight = document.getElementById("navegation-arrow-right");
