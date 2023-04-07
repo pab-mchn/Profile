@@ -16,6 +16,7 @@ footer {
 }
 .footer-img:hover {
   padding: 1px;
+  transition: all 0.1s ease-out;
 }
 
 @media screen and (max-width: 800px) {
