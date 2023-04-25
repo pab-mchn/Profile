@@ -27,7 +27,7 @@
 .about-section-text {
   margin-top: 20px;
   font-size: 1rem;
-  max-width: 460px;
+  max-width: 400px;
 }
 .about-section-text-img {
   height: 50px;
@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 1088px) {
   .about-section-img-container {
-    margin-right: 15px;
+    margin: 0 auto;
   }
   .about-section-container {
     flex-direction: column;
@@ -47,8 +47,7 @@
     margin-bottom: 30vh;
   }
   .about-section-text-container {
-    margin-top: 40px;
-    margin-left: 0px;
+    margin: 0 auto;
   }
   .about-section-img-container {
     text-align: center;
