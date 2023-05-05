@@ -34,13 +34,4 @@ const projects = [
     linkInfo: "https://www.linkedin.com/company/mind-support-e-v/",
     linkProject: "https://mindsupport.eu/en/home",
   },
-  // {
-  //   id: 3,
-  //   img: "https://res.cloudinary.com/pabcode/image/upload/v1674129082/onTheCode/coderhouse_baner_aeyzob.png",
-  //   name: "Coderhouse",
-  //   projectDescription: "International coding school",
-  //   role: "Role: Coordinator and Tutor",
-  //   linkInfo: "https://www.linkedin.com/school/coderhouse/",
-  //   linkProject: "https://www.coderhouse.es",
-  // },
 ];
