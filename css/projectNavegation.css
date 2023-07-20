@@ -12,7 +12,7 @@
 #navegation-arrow-left {
   position: absolute;
   left: 10%;
-  display: none;
+
   cursor: pointer;
   font-size: 25px;
 }
@@ -20,17 +20,7 @@
 #navegation-arrow-right {
   position: absolute;
   right: 10%;
-  display: none;
+
   cursor: pointer;
   font-size: 25px;
-}
-@media screen and (max-width: 900px) {
-  #navegation-arrow-right {
-    display: block;
-  }
-  #navegation-arrow-left {
-    position: absolute;
-    left: 10%;
-    display: block;
-  }
 }
