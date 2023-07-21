@@ -46,27 +46,6 @@ projects.forEach((project) => {
   // });
 });
 
-//dinamic main projects
-const mainProjectListContainer = document.getElementById("main-projects-list-container");
-mainProject.forEach((project) => {
-  let mainProjectContent = document.createElement("li");
-  mainProjectListContainer.className = "main-projects-list-item";
-  mainProjectListContainer.innerHTML = `
-                <h1>on the code</h1>
-                <div class="projects-list-item-info">
-                <h2>${project.name} </h2>
-                <h4>${project.projectDescription}</h4>
-                <p>${project.role}</p>
-                <div class="projects-list-item-links">
-                <p><span><a class="btn-gradient-mobile" href="${project.linkInfo}" target="_blank" >More</a>
-                <a class="btn-gradient-mobile" href="${project.linkProject}" target="_blank">Live</a></span>
-                </div>
-
-                </div>
-            `;
-  projectListContainer.append(mainProjectContent);
-});
-
 //navegation projects
 const arrowLeft = document.getElementById("navegation-arrow-left");
 const arrowRight = document.getElementById("navegation-arrow-right");

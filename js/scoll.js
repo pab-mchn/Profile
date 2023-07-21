@@ -11,7 +11,7 @@ scrollLinks.forEach((link) => {
 
     if (targetId === "#contact") {
       if (window.innerWidth < 768) {
-        offset = navbarHeight - 350; // decrease the offset by 320 pixels on small screens
+        offset = navbarHeight - 300; // decrease the offset by 320 pixels on small screens
       } else {
         offset = navbarHeight - (20 * window.innerHeight) / 100; // decrease the offset by 5% of the viewport height on larger screens
       }

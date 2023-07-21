@@ -12,7 +12,6 @@
 #navegation-arrow-left {
   position: absolute;
   left: 10%;
-
   cursor: pointer;
   font-size: 25px;
 }
@@ -20,7 +19,6 @@
 #navegation-arrow-right {
   position: absolute;
   right: 10%;
-
   cursor: pointer;
   font-size: 25px;
 }
